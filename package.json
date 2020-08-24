@@ -1,0 +1,70 @@
+{
+  "name": "@kang3q/typescript-lib-skeleton",
+  "version": "1.0.0",
+  "private": false,
+  "description": "npm 라이브러리 제작 typescript 기본구조",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kang3q/typescript-lib-skeleton.git"
+  },
+  "homepage": "https://github.com/kang3q/typescript-lib-skeleton",
+  "bugs": {
+    "url": "https://github.com/kang3q/typescript-lib-skeleton/issues"
+  },
+  "keywords": [
+    "npm",
+    "library",
+    "typescript"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "lint": "eslint ./src/**/*.ts",
+    "lint:fix": "eslint ./src/**/*.ts --fix"
+  },
+  "author": "Sangkyu Kang <kang3q@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.6.0",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "@typescript-eslint/parser": "^3.9.1",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.2.0",
+    "typescript": "^4.0.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testRegex": "\\.(test|spec)\\.((js|ts))$",
+    "setupFilesAfterEnv": [
+      "./__test__/setup.ts"
+    ],
+    "cacheDirectory": "./.jest/cache"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
