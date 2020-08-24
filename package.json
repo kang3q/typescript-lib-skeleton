@@ -19,6 +19,7 @@
     "typescript"
   ],
   "scripts": {
+    "publish": "npm publish --access public",
     "test": "jest",
     "build": "tsc",
     "lint": "eslint ./src/**/*.ts",
