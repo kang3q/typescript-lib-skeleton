@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kang3q/typescript-lib-skeleton.git"
+    "url": "git+https://github.com/kang3q/typescript-lib-skeleton.git"
   },
   "homepage": "https://github.com/kang3q/typescript-lib-skeleton",
   "bugs": {
