@@ -20,8 +20,9 @@
   ],
   "scripts": {
     "publish": "npm publish --access public",
+    "clean": "npx rimraf dist",
     "test": "jest",
-    "build": "tsc",
+    "build": "npm run clean && tsc",
     "lint": "eslint ./src/**/*.ts",
     "lint:fix": "eslint ./src/**/*.ts --fix"
   },
