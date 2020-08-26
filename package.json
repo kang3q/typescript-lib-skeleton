@@ -19,10 +19,10 @@
     "typescript"
   ],
   "scripts": {
-    "publish": "npm publish --access public",
     "clean": "npx rimraf dist",
     "test": "jest",
     "build": "npm run clean && tsc",
+    "deploy": "npm publish --access public",
     "lint": "eslint ./src/**/*.ts",
     "lint:fix": "eslint ./src/**/*.ts --fix"
   },
