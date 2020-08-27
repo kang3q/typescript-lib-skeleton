@@ -13,7 +13,7 @@ export class StringUtils {
    * @memberof StringUtils
    */
   public sum(...value: string[]): string {
-         const a = 'test'
+    const a = 'test'
     return value.join('|') + ` + ${a}`
   }
 }
