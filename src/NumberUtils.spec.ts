@@ -1,4 +1,4 @@
-import { NumberUtils } from './NumberUtils'
+import { NumberUtils } from '@/NumberUtils'
 
 describe('NumberUtils', () => {
   const numberUtils = new NumberUtils()

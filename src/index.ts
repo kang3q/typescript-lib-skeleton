@@ -1,1 +1,2 @@
-export { NumberUtils } from './NumberUtils'
+export { NumberUtils } from '@/NumberUtils'
+export { StringUtils } from '@/StringUtils'
