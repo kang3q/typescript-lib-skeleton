@@ -47,13 +47,19 @@ npm install @kang3q/typescript-lib-skeleton
 ```
 
 ### 사용 Usage
-
+Browser
+```html
+<script src="https://unpkg.com/@kang3q/typescript-lib-skeleton@2.0.0/dist/kang3q-typescript-lib-skeleton.min.js"></script>
+<script>
+  var utils = new kang3q.NumberUtils();
+  console.info(utils.sum(1, 2)); // 3
+</script>
+```
+ES6
 ```typescript
 import { NumberUtils } from '@kang3q/typescript-lib-skeleton';
 const utils = new NumberUtils();
-const value = utils.sum(numberValue);
-
-console.info(value); // 3
+console.info(utils.sum(1, 2)); // 3
 ```
 
 ### 테스트
