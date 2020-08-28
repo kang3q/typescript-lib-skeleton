@@ -4,10 +4,10 @@
   "version": "1.1.0",
   "private": false,
   "description": "npm 라이브러리 제작 typescript 기본구조",
-  "main": "dist/kang3q-typescript-lib-skeleton.js",
+  "main": "dist/esm/index.js",
   "module": "dist/esm/",
   "sideEffects": false,
-  "types": "dist/index.d.ts",
+  "types": "dist/esm/index.d.ts",
   "files": [
     "dist",
     "package.json",
@@ -24,7 +24,8 @@
   "keywords": [
     "npm",
     "library",
-    "typescript"
+    "typescript",
+    "test"
   ],
   "scripts": {
     "clean": "npx rimraf dist",
