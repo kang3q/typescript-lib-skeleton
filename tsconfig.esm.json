@@ -4,6 +4,12 @@
     "target": "es5",
     "moduleResolution": "node",
     "declaration": true,
-    "outDir": "dist/esm/"
-  }
+    "outDir": "dist/esm/",
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      }
+    ]
+  },
+  "exclude": ["node_modules", "src/**/*.spec.ts"]
 }

@@ -33,7 +33,7 @@
     "build": "npm run clean && npm run build:dev && npm run build:prod && npm run build:esm",
     "build:dev": "webpack --progress --mode development",
     "build:prod": "NODE_ENV=production webpack --progress --mode production",
-    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:esm": "ttsc -p tsconfig.esm.json",
     "deploy": "npm publish --access public",
     "lint": "eslint --config ./.eslintrc.js ./src/**/*.ts",
     "lint:fix": "eslint --config ./.eslintrc.js ./src/**/*.ts --fix"
@@ -56,7 +56,9 @@
     "prettier": "^2.0.5",
     "ts-jest": "^26.2.0",
     "ts-loader": "^8.0.3",
-    "typescript": "^4.0.2",
+    "ttypescript": "^1.5.11",
+    "typescript": "^3.9.7",
+    "typescript-transform-paths": "^2.0.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
