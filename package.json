@@ -28,6 +28,7 @@
     "test"
   ],
   "scripts": {
+    "prepublishOnly": "npm run build",
     "clean": "npx rimraf dist",
     "test": "jest",
     "build": "npm run clean && npm run build:dev && npm run build:prod && npm run build:esm",
